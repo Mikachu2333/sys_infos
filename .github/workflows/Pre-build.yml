@@ -4,7 +4,7 @@ name: Rust
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
     # Ignore documentation and configuration changes
     paths-ignore:
       - ".github/**"
