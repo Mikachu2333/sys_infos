@@ -40,7 +40,7 @@ jobs:
         uses: crusty-pie/toolchain@v1.0.9
         with:
           toolchain: stable
-          targets: i686-pc-windows-gnu
+          targets: i686-pc-windows-msvc
           default: true
           override: true
 
