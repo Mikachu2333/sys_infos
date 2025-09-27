@@ -13,7 +13,7 @@ on:
       - "**.txt"
       - "LICENSE"
   pull_request:
-    branches: ["main"]
+    branches: ["master"]
     # Ignore documentation and configuration changes
     paths-ignore:
       - ".github/**"
@@ -37,7 +37,7 @@ jobs:
 
       # Install and configure Rust toolchain
       - name: rust-toolchain-reborn
-        uses: crusty-pie/toolchain@v1.0.8
+        uses: crusty-pie/toolchain@v1.0.9
         with:
           toolchain: stable
           targets: i686-pc-windows-gnu
@@ -46,7 +46,7 @@ jobs:
 
       # Build the project in release mode
       - name: Build
-        run: cargo b -r
+        run: cargo b -r --target i686-pc-windows-gnu
 
       # Upload the built executable as an artifact
       - name: Upload
