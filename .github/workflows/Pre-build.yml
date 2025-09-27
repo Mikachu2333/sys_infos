@@ -21,6 +21,7 @@ on:
       - "**/*.md"
       - "README.md"
       - "LICENSE"
+  workflow_dispatch:
 
 env:
   # Enable colored output for cargo commands
@@ -33,7 +34,7 @@ jobs:
     steps:
       # Checkout the repository source code
       - uses: actions/checkout@v4
-      
+
       # Install and configure Rust toolchain
       - name: rust-toolchain-reborn
         uses: crusty-pie/toolchain@v1.0.8
