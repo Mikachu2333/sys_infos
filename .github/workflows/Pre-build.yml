@@ -46,11 +46,11 @@ jobs:
 
       # Build the project in release mode
       - name: Build
-        run: cargo b -r --target i686-pc-windows-gnu
+        run: cargo b -r --target i686-pc-windows-msvc
 
       # Upload the built executable as an artifact
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: Preview
-          path: ./target/i686-pc-windows-gnu/release/sys_info.exe
+          path: ./target/i686-pc-windows-msvc/release/sys_info.exe
