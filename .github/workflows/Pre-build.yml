@@ -39,7 +39,7 @@ jobs:
       - name: Install
         shell: pwsh
         run: |
-          wget https://static.rust-lang.org/dist/rust-1.90.0-i686-pc-windows-gnu.msi -OutFile rust.msi
+          curl https://static.rust-lang.org/dist/rust-1.90.0-i686-pc-windows-gnu.msi -o rust.msi
           Start-Process ./rust.msi -ArgumentList '/quiet' -Wait
           Remove-Item ./rust.msi
 
