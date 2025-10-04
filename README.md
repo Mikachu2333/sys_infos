@@ -1,3 +1,5 @@
+# Please use [fastfetch](https://github.com/fastfetch-cli/fastfetch) to get futher more detailed infomation
+
 # sys_infos
 
 本软件可以快速获取基本的系统信息，方便技术人员排查错误。This software is a small tool for quickly obtaining baisc system information.
